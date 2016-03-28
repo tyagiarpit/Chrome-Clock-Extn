@@ -11,6 +11,8 @@ function save_options() {
   });
 	chrome.extension.sendRequest({tz_offset: offset}, function(response) {
 	});
+  alert("Timezone changed to "+obj.options[idx].text);
+  window.close();
 }
 
 function restore_options() {
